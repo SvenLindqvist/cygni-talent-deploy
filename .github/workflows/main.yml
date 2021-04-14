@@ -33,8 +33,7 @@ jobs:
         run: npm ci
       - name: testing
         run: npm test
-      - name: prettier
-        run: prettier --check .
+
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
