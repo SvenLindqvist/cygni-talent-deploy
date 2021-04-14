@@ -34,9 +34,7 @@ jobs:
       - name: testing
         run: npm test
       - name: prettier
-        run: |
-            npx prettier --write .
-            prettier --check .
+        run: prettier --check .
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
