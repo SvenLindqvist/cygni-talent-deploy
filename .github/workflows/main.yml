@@ -30,9 +30,13 @@ jobs:
           node-version: "14"
           
       - name: Install dependencies
-        run: npm ci --production
+        run: npm ci
       - name: testing
         run: npm test
+      - name: prettier
+        run: |
+            npx prettier --write .
+            prettier --check .
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
